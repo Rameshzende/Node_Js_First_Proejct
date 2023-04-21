@@ -1,0 +1,27 @@
+{
+  "name": "node_js_first_proejct",
+  "version": "1.0.0",
+  "description": "This is first Node js contact App",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rameshzende/Node_Js_First_Proejct.git"
+  },
+  "author": "Ramesh Jhande",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rameshzende/Node_Js_First_Proejct/issues"
+  },
+  "homepage": "https://github.com/Rameshzende/Node_Js_First_Proejct#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3"
+  }
+}
