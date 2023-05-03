@@ -1,8 +1,9 @@
-const express = require("express")
-const router = express.outer()
+var express = require('express')
+var router = express.Router()
+const { getContacts, createContact, getContact, upDateContact, deleteContact } = require('../controller/contactController')
 
-router.route("/").get((req, res) => {
-    res.json({"Message" : "Request Sent Back"})
-})
+router.route("/").get(getContacts).post(createContact)
 
-module.exports = { router }
+router.route("/:id").get(getContact).put(upDateContact).delete(deleteContact)
+
+module.exports = router 
